@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="CSS/cssReset.css">
+     <link rel="stylesheet" href="CSS/mystyle.css">
+     <title>Glovo_homePage</title>
+     <link rel="icon" type="image/x-icon" href="imgs/favicon-32x32.png" >
+     
+</head>
+
+<body>
+     <div class="bodyWrapper">
+          <div id="header_container">
+               <header id="header">
+                    <div id="logo">
+                         <img src="imgs/logo_green.svg" alt="logo_Glovo">
+                    </div>
+                    <span id="span_container">
+                         <h2>Въведете адреса си, за да знаете</h2>
+                         <span id="black_circle">
+                              <span id="black_circle_inner">
+                                   <h2> какво има близо до Вас</h2>
+                              </span>
+                         </span>
+                    </span>
+                    <div id="startBHeader">
+                         <a href="#"> Старт </a>
+                    </div>
+               </header>
+               <div id="header_sticky_part">
+                    <div id="address_Div_Container">
+                         <div class="address">
+                              <div id="flagDiv">
+                                   <img src="https://res.cloudinary.com/glovoapp/image/fetch///https://glovoapp.com/images/icons/flag--white.svg"
+                                        alt="flagIcon" id="flagIcon">
+                              </div>
+                              <div id="formDiv">
+                                   <form action="setAddress" id="formAddress">
+                                        <input type="address" name="address" id="address"
+                                             placeholder="Какъв е Вашият адрес?">
+                                   </form>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+        
+          <div id="introText">
+               <h1>Разгледайте обектите за доставка в софия</h1><br>
+               <div id="address_Div_Container">
+                    <div class="address">
+                         <div id="flagDiv">
+                              <img src="https://res.cloudinary.com/glovoapp/image/fetch///https://glovoapp.com/images/icons/flag--white.svg"
+                                   alt="flagIcon" id="flagIcon">
+                         </div>
+                         <div id="formDiv">
+                              <form action="setAddress" id="formAddress">
+                                   <input type="address" name="address" id="address"
+                                        placeholder="Какъв е Вашият адрес?">
+                              </form>
+                         </div>
+                    </div>
+               </div>
+               <div class="location">
+                    <div id="arrowDiv">
+                         <img src="https://res.cloudinary.com/glovoapp/image/fetch//q_auto/https://glovoapp.com/images/svg/location.svg"
+                              alt="arrowIcon" id="arrowIcon">
+                    </div>
+                    <div id="currentLocationText">
+                         <a href="#">Използвайте текущото местоположение</a>
+                    </div>
+               </div>
+          </div>
+
+          <!-- Bubble menu  -->
+
+          <div id="bubbleMenuContainer">
+               <div class="bubbleMenu">
+                    <!-- bubleMenu div -> circles -->
+
+                    <div>
+                         <div>
+                              <img class="bubbleImg"
+                                   src="https://res.cloudinary.com/glovoapp/w_60,h_60,c_fit,f_auto,q_auto:best/CategoryGroups/wcasnyx702zmt2emjdtq"
+                                   alt="firstImg">
+
+                              <a class="bubbleText" href="#">Храна</a>
+                         </div>
+                    </div>
+
+                    <div>
+                         <div>
+                              <img class="bubbleImg"
+                                   src="https://res.cloudinary.com/glovoapp/w_60,h_60,c_fit,f_auto,q_auto:best/StoreCategories/yn87iqomg2p9h5bwpssz"
+                                   alt="firstImg">
+
+                              <a class="bubbleText" href="#">Пратки</a>
+                         </div>
+                    </div>
+                    <div>
+                         <div>
+                              <img class="bubbleImg"
+                                   src="https://res.cloudinary.com/glovoapp/w_60,h_60,c_fit,f_auto,q_auto:best/CategoryGroups/fvpmgd1mojetyijlkk8f"
+                                   alt="firstImg">
+
+                              <a class="bubbleText" href="#">Магазини</a>
+                         </div>
+                    </div>
+                    <div>
+                         <div>
+                              <img class="bubbleImg"
+                                   src="https://res.cloudinary.com/glovoapp/w_60,h_60,c_fit,f_auto,q_auto:best/StoreCategories/hhxw0ckf1kqpxuzo4eio"
+                                   alt="firstImg">
+
+                              <a class="bubbleText" href="#">Каквото пожелаете</a>
+                         </div>
+                    </div>
+                    <div>
+                         <div>
+                              <img class="bubbleImg"
+                                   src="https://res.cloudinary.com/glovoapp/w_60,h_60,c_fit,f_auto,q_auto:best/StoreCategories/xe3kbidv3tub3xditqat"
+                                   alt="firstImg">
+
+                              <a class="bubbleText" href="#">Супермаркет</a>
+                         </div>
+                    </div>
+                    <div>
+                         <div>
+                              <img class="bubbleImg"
+                                   src="https://res.cloudinary.com/glovoapp/w_60,h_60,c_fit,f_auto,q_auto:best/CategoryGroups/bmajimjndzhxlbmjwm3m"
+                                   alt="firstImg">
+
+                              <a class="bubbleText" href="#">Кафе и закуска</a>
+                         </div>
+                    </div>
+                    <div>
+                         <div>
+                              <img class="bubbleImg"
+                                   src="https://res.cloudinary.com/glovoapp/w_60,h_60,c_fit,f_auto,q_auto:best/CategoryGroups/ruuuklijl2xpd2eotshm"
+                                   alt="firstImg">
+
+                              <a class="bubbleText" href="#">Коледа с Glovo</a>
+                         </div>
+                    </div>
+
+
+
+               </div>
+          </div>
+
+          <!-- End Bubble Menu -->
+
+          <!-- Start Restourants section -->
+
+          <div id="wave1">
+               <img src="imgs/wave1.PNG" alt="wavebg">
+          </div>
+
+          <div id="resTitle">
+               <span id="spanDecoration">
+                    <h1>Храна</h1>
+               </span>
+               <h1> в близост до Вас</h1>
+          </div>
+
+          <div id="restourantsWrapper">
+               <!-- 1 -->
+               <div class="restaurants">
+                    <div class="resImgContainer"
+                         style="background-image: url(https://res.cloudinary.com/glovoapp/w_450,h_250,c_fill,f_auto,q_auto/Stores/u21etqtn49rcxf45o7tf);">
+                         <!-- Преместиг innerTextContainera -> за да не го лови OPACITITO !!!!! -->
+                         <!-- <div class="innerTextContainer" >
+                              <p>McDonalds</p>
+                         </div> -->
+                    </div>
+                    <div class="innerTextContainer">
+                         <p>McDonalds</p>
+                    </div>
+                    <div class="underImgTextContainer">
+                         <span>
+                              <img class="likeIcon"
+                                   src="https://res.cloudinary.com/glovoapp/f_auto,q_auto/store_ratings/rating_regular.png"
+                                   alt="likeIcon">
+                         </span>
+                         <p>96% (86)</p>
+                    </div>
+               </div>
+
+               <!-- 2 -->
+               <div class="restaurants">
+                    <div class="resImgContainer"
+                         style="background-image: url(https://res.cloudinary.com/glovoapp/w_450,h_250,c_fill,f_auto,q_auto/Stores/il9ifktg5otnk4snr775);">
+
+                    </div>
+                    <div class="innerTextContainer">
+                         <p>Heshburger</p>
+                    </div>
+                    <div class="underImgTextContainer">
+                         <span>
+                              <img class="likeIcon"
+                                   src="https://res.cloudinary.com/glovoapp/f_auto,q_auto/store_ratings/rating_regular.png"
+                                   alt="likeIcon">
+                         </span>
+                         <p>93% (500+)</p>
+                    </div>
+
+               </div>
+
+               <!-- 3    -->
+               <div class="restaurants">
+                    <div class="resImgContainer"
+                         style="background-image: url(https://res.cloudinary.com/glovoapp/w_450,h_250,c_fill,f_auto,q_auto/Stores/mzrrjsef9kc0lofdgtfy);">
+
+                    </div>
+                    <div class="innerTextContainer">
+                         <p>KFC</p>
+                    </div>
+                    <div class="underImgTextContainer">
+                         <span>
+                              <img class="likeIcon"
+                                   src="https://res.cloudinary.com/glovoapp/f_auto,q_auto/store_ratings/rating_regular.png"
+                                   alt="likeIcon">
+                         </span>
+                         <p>91% (500+)</p>
+                    </div>
+
+               </div>
+               <!-- 4 -->
+               <div class="restaurants">
+                    <div class="resImgContainer"
+                         style="background-image: url(https://res.cloudinary.com/glovoapp/w_450,h_250,c_fill,f_auto,q_auto/Stores/yzvbxyc9vuuvpgmtzfnq)">
+
+                    </div>
+                    <div class="innerTextContainer">
+                         <p>KFC</p>
+                    </div>
+                    <div class="underImgTextContainer">
+                         <span>
+                              <img class="likeIcon"
+                                   src="https://res.cloudinary.com/glovoapp/f_auto,q_auto/store_ratings/rating_regular.png"
+                                   alt="likeIcon">
+                         </span>
+                         <p>85% (500+)</p>
+                    </div>
+
+               </div>
+               <!-- 5 -->
+               <div class="restaurants">
+                    <div class="resImgContainer"
+                         style="background-image: url(https://res.cloudinary.com/glovoapp/w_450,h_250,c_fill,f_auto,q_auto/Stores/zlempbajw5en5ylmunl7)">
+
+                    </div>
+                    <div class="innerTextContainer">
+                         <p>Restaurant Victoria</p>
+                    </div>
+                    <div class="underImgTextContainer">
+                         <span>
+                              <img class="likeIcon"
+                                   src="https://res.cloudinary.com/glovoapp/f_auto,q_auto/store_ratings/rating_regular.png"
+                                   alt="likeIcon">
+                         </span>
+                         <p>93% (500+)</p>
+                    </div>
+
+               </div>
+
+               <!-- 6 -->
+               <div class="restaurants">
+                    <div class="resImgContainer"
+                         style="background-image: url(https://res.cloudinary.com/glovoapp/w_450,h_250,c_fill,f_auto,q_auto/Stores/hhqeeglovepspeoz462d)">
+
+                    </div>
+                    <div class="innerTextContainer">
+                         <p>Green Book</p>
+                    </div>
+                    <div class="underImgTextContainer">
+                         <span>
+                              <img class="likeIcon"
+                                   src="https://res.cloudinary.com/glovoapp/f_auto,q_auto/store_ratings/rating_regular.png"
+                                   alt="likeIcon">
+                         </span>
+                         <p>96% (245+)</p>
+                    </div>
+
+               </div>
+
+               <!-- 7 -->
+               <div class="restaurants">
+                    <div class="resImgContainer"
+                         style="background-image: url(https://res.cloudinary.com/glovoapp/w_450,h_250,c_fill,f_auto,q_auto/Stores/odownzosdc152x9otuva);">
+
+                    </div>
+                    <div class="innerTextContainer">
+                         <p>Felicita</p>
+                    </div>
+                    <div class="underImgTextContainer">
+                         <span>
+                              <img class="likeIcon"
+                                   src="https://res.cloudinary.com/glovoapp/f_auto,q_auto/store_ratings/rating_regular.png"
+                                   alt="likeIcon">
+                         </span>
+                         <p>96% (294)</p>
+                    </div>
+
+               </div>
+
+               <!-- 8 -->
+               <div class="restaurants">
+                    <div class="resImgContainer"
+                         style="background-image: url(https://res.cloudinary.com/glovoapp/w_450,h_250,c_fill,f_auto,q_auto/Stores/gemb6wgzxtlguhbqmtgi);">
+
+                    </div>
+                    <div class="innerTextContainer">
+                         <p>Турски ресторант Delight</p>
+                    </div>
+                    <div class="underImgTextContainer">
+                         <span>
+                              <img class="likeIcon"
+                                   src="https://res.cloudinary.com/glovoapp/f_auto,q_auto/store_ratings/rating_regular.png"
+                                   alt="likeIcon">
+                         </span>
+                         <p>96% (500+)</p>
+                    </div>
+
+               </div>
+
+               <!-- 9 -->
+               <div class="restaurants">
+                    <div class="resImgContainer"
+                         style="background-image: url(https://res.cloudinary.com/glovoapp/w_450,h_250,c_fill,f_auto,q_auto/Stores/ze8z4okeuaevnsj406r6);">
+
+                    </div>
+                    <div class="innerTextContainer">
+                         <p>Pizza Don Vito</p>
+                    </div>
+                    <div class="underImgTextContainer">
+                         <span>
+                              <img class="likeIcon"
+                                   src="https://res.cloudinary.com/glovoapp/f_auto,q_auto/store_ratings/rating_regular.png"
+                                   alt="likeIcon">
+                         </span>
+                         <p>95% (500+)</p>
+                    </div>
+
+               </div>
+
+               <!-- 10    -->
+               <div class="restaurants">
+                    <div class="resImgContainer"
+                         style="background-image: url(https://res.cloudinary.com/glovoapp/w_450,h_250,c_fill,f_auto,q_auto/Stores/li15qdddiudo2dasnwlc);">
+
+                    </div>
+                    <div class="innerTextContainer">
+                         <p>Мис Каприз</p>
+                    </div>
+                    <div class="underImgTextContainer">
+                         <span>
+                              <img class="likeIcon"
+                                   src="https://res.cloudinary.com/glovoapp/f_auto,q_auto/store_ratings/rating_regular.png"
+                                   alt="likeIcon">
+                         </span>
+                         <p>96% (328)</p>
+                    </div>
+
+               </div>
+
+               <!-- 11 -->
+               <div class="restaurants">
+                    <div class="resImgContainer"
+                         style="background-image: url(https://res.cloudinary.com/glovoapp/w_450,h_250,c_fill,f_auto,q_auto/Stores/nugu3indug8qwau6zige);">
+
+                    </div>
+                    <div class="innerTextContainer">
+                         <p>Мис Каприз Арсеналски</p>
+                    </div>
+                    <div class="underImgTextContainer">
+                         <span>
+                              <img class="likeIcon"
+                                   src="https://res.cloudinary.com/glovoapp/f_auto,q_auto/store_ratings/rating_regular.png"
+                                   alt="likeIcon">
+                         </span>
+                         <p>94% (52)</p>
+                    </div>
+
+               </div>
+
+               <!-- 12    -->
+
+               <div class="restaurants">
+                    <div class="resImgContainer"
+                         style="background-image: url(https://res.cloudinary.com/glovoapp/w_450,h_250,c_fill,f_auto,q_auto/Stores/mkadvvpn2hidz0rr65jp);">
+
+                    </div>
+                    <div class="innerTextContainer">
+                         <p>Nushic / Сръбска скара</p>
+                    </div>
+                    <div class="underImgTextContainer">
+                         <span>
+                              <img class="likeIcon"
+                                   src="https://res.cloudinary.com/glovoapp/f_auto,q_auto/store_ratings/rating_regular.png"
+                                   alt="likeIcon">
+                         </span>
+                         <p>96% (86)</p>
+                    </div>
+
+               </div>
+
+
+
+
+          </div>
+
+          <!-- END Restourants Section -->
+
+          <div id="moreResulMainContainer">
+               <div id="moreResultOval">
+                    <h2>Вижте още ресторанти</h2>
+               </div>
+          </div>
+
+          <!-- back-ground Wave Div -->
+          <div id="wave2">
+               <svg viewBox="0 0 500 150" preserveAspectRatio="none">
+                    <path d="M2.45,5.10 C170.61,-23.51 246.24,176.80 500.00,49.99 L500.00,150.00 L0.00,150.00 Z">
+                    </path>
+               </svg>
+
+               <div id="handShake">
+                    <img src="imgs/handshake.svg" alt="handShake">
+               </div>
+          </div>
+
+          <div id="together">
+               <h1>Да го направим заедно</h1>
+          </div>
+
+          <!-- Get Work Section    -->
+          <div id="getWorkBody">
+               <div id="getWorkWrapper">
+                    <!-- job1 -->
+                    <div class="job">
+                         <div class="jobImgContainer">
+                              <img src="https://res.cloudinary.com/glovoapp/image/fetch//w_254,h_220,c_fit,f_auto,q_auto:best/dpr_auto/https://glovoapp.com/images/corporate/rider-image.png"
+                                   alt="job1">
+                         </div>
+                         <div class="jobTitle">
+                              <h3>Станете куриер</h3>
+                         </div>
+
+                         <div class="jobText">
+                              <p>Бъдете свой собствен шеф! Насладете се на гъвкавост, свобода и конкурентни печалби
+                                   докато доставяте с Glovo.</p>
+                         </div>
+                         <a href="#">
+                              <div class=" jobJoinText">
+                                   <h3>Присъединете се към <br>нас</h3>
+                              </div>
+                         </a>
+                    </div>
+
+
+                    <!-- job2 -->
+                    <div class="job">
+                         <div class="jobImgContainer">
+                              <img src="https://res.cloudinary.com/glovoapp/image/fetch//w_254,h_220,c_fit,f_auto,q_auto:best/dpr_auto/https://glovoapp.com/images/corporate/partners-image.png"
+                                   alt="job1">
+                         </div>
+                         <div class="jobTitle">
+                              <h3>Станете партньор</h3>
+                         </div>
+
+                         <div class="jobText">
+                              <p>Развивайте с Glovo! Нашата технология и потребителска база могат да Ви помогнат да
+                                   увеличите продажбите си и да отключите нови възможности!</p>
+                         </div>
+
+                         <div class=" jobJoinText">
+                              <h3>Присъединете се към <br>нас</h3>
+                         </div>
+                    </div>
+
+                    <!-- job3 -->
+                    <div class="job">
+                         <div class="jobImgContainer">
+                              <img src="https://res.cloudinary.com/glovoapp/image/fetch//w_254,h_220,c_fit,f_auto,q_auto:best/dpr_auto/https://glovoapp.com/images/corporate/carrers-image.png"
+                                   alt="job1">
+                         </div>
+                         <div class="jobTitle">
+                              <h3>Кариера</h3>
+                         </div>
+
+                         <div class="jobText">
+                              <p>Готови ли сте за вълнуващо ново предизвикателство? Ако сте амбициозни, непретенциозни и
+                                   обичате да работите с хора, непременно се свържете с нас!</p>
+                         </div>
+
+                         <div class=" jobJoinText">
+                              <h3>Присъединете се към <br>нас</h3>
+
+                         </div>
+                    </div>
+               </div>
+          </div>
+          <!-- last wave div / before footer -->
+          <div id="lastWaveContainer">
+               <img src="imgs/footer-wave.svg" alt="last Lave Background">
+          </div>
+          <!-- footer -->
+          <div id="footerContainer">
+               <img src="imgs/glovo-white.svg" alt="logo_Glovo_footer" id="footerGlovoLogo">
+
+               <div id="footer-text-container">
+                    <div class="footerDiv">
+                         <h3> Да го направим заедно</h3>
+                         <a href="#">Кариера</a>
+                         <a href="#">Glovo за партньори</a>
+                         <a href="#">Кариери</a>
+                         <a href="#">Glovo Bussines</a>
+                    </div>
+                    <div class="footerDiv">
+                         <h3> Полезни връзки</h3>
+                         <a href="#">За нас</a>
+                         <a href="#">Често задавани въпроси</a>
+                         <a href="#">Блог</a>
+                         <a href="#">Свържете се с нас</a>
+                         <a href="#">Сигурност</a>
+                    </div>
+                    <div class="footerDiv">
+                         <h3> Следвайте ни</h3>
+                         <a href="#">Facebook</a>
+                         <a href="#">Twitter</a>
+                         <a href="#">Instagram</a>
+                    </div>
+                    <div class="footerDiv">
+                         <img src="imgs/appstore logo.svg" alt="appstore logo" class="logoGooglePlay">
+                         <img src="imgs/googlePlay logo.svg" alt="googlePlay logo" class="logoGooglePlay">
+                         <a href="#">ОБЩИ УСЛОВИЯ</a>
+                         <a href="#">ПОЛИТИКА ЗА ПОВЕРИТЕЛНОСТ</a>
+                         <a href="#">ПОЛИТИКА ЗА БИСКВИТКИ</a>
+                    </div>
+
+               </div>
+               <div id="languageChangeContainer">
+                    <div id="languageChange">
+                         <div>
+                              <h3>Български </h3>
+                         </div>
+                         <div><img src="imgs/selectArrow.png" alt="selectArrow">
+                         </div>
+                    </div>
+               </div>
+
+
+          </div>
+
+
+     </div>
+     <!-- sticky header script -->
+     <script src="scripts/sticky-header.js"></script>
+</body>
+
+</html>

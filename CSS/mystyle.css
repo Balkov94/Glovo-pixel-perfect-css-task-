@@ -1,0 +1,727 @@
+*{
+     box-sizing: border-box;
+    
+}
+body{
+     font-family: "Gotham","Arial","Helvetica Neue",Helvetica,sans-serif;
+}
+.bodyWrapper{      
+          display: flex;
+          flex-direction: column;
+          min-height: 100%;
+          word-wrap: break-word;
+          font-family: "Gotham","Arial","Helvetica Neue",Helvetica,sans-serif;     
+}
+/* header + header sticky */
+#header {
+     background-color:#ffc244;
+     width: 100%;
+     height: 100px;
+     justify-content: space-between;
+     align-items: flex-start; 
+     box-sizing: border-box;  
+     display: flex;   
+}
+/* class for make header sticky on scroll */
+#header_scroll{
+     width: 100%;
+     background-color:#ffc244;
+     max-width: 100%;
+     height: 100px;
+     justify-content: space-between;
+     align-items: flex-start; 
+     box-sizing: border-box;  
+     display: flex; 
+     position: fixed;
+     z-index: 100;
+     box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
+} 
+#header_sticky_part{
+     width: 100%;
+     background-color: orange;
+     height: fit-content;
+}
+/* for hidden header text-> visible only in sticky */
+#span_container{ 
+     /* display: block; */
+     margin-top: 50px;
+     z-index: 110;
+     font-weight: bold;
+     text-align: center; 
+     margin-left: 48px;   
+}
+#span_container h2{
+     display: inline;
+     font-size: 18px;
+}
+#black_circle{
+     background-color: rgb(247, 247, 247);
+     /* !!!! font-size:6px ->makes span smaller then text */
+     font-size: 6px;
+     border-radius: 20px;    
+}
+#header div img{
+     width:"160px";
+     height:"80px";
+}
+#startBHeader{
+     border-radius: 20px;
+     width:140px;
+     height: 42px;
+     background-color: #00a082;  
+     color: white;
+     text-align: center;
+}
+/* phone  startB fix */
+@media only screen and (max-width: 600px) {
+     header{
+          zoom: 0.7;
+     }
+     #introText{
+          zoom: 0.5;
+     }
+}
+#startBHeader a {
+     display: flex; 
+}
+#startBHeader:hover{ 
+     background-color: #00a082; 
+     filter: brightness(0.85);   
+}
+#startBHeader a {
+     justify-content: center;
+     align-items: center;
+     padding-top: 11px;
+     color: white;
+     font-weight: bold;
+     font-family:sans-serif;  
+}
+#startBHeader{
+     margin: 30px 100px;  
+}
+#logo img {
+     height: 46px;
+     width: auto;  
+     margin-top: 20px;
+     margin-left: 100px;
+     cursor: pointer;
+}
+
+/* header (logo --- start)  END !!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/* Intro text -> Разгледайте обектите за ... + input field city + тек местопожение*/
+#introText{
+
+     background-color:#ffc244;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;   
+}
+#introText h1{
+     color: white;
+     text-align: center;
+     font-weight: bold;
+     font-family:sans-serif; 
+     font-size: 44px;
+     margin: auto;
+     padding: 2% 15%;
+     color: black;
+}
+
+#address_Div_Container {
+     background-color: #ffc244;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+}
+.address{
+     /* box-sizing: border-box; */
+     height: 50px;
+     width: 46%;
+     display: flex;
+     flex-direction: row;
+     max-width: 100%;
+     background-color: #fff;
+     justify-content: flex-start;
+     align-content: center;
+     margin-bottom: 18px;
+     border-radius: 10px;   
+        
+}
+/* placeholder  Styles input field -> "Какъв е Вашият адресс" ->  */
+#address::-webkit-input-placeholder {
+     font-size: 18px;
+     line-height:3;
+     opacity: 0.5;
+     text-align: left;  
+ }
+#address form {
+     display: flex;    
+}
+#flagDiv{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     overflow: hidden; 
+     border-radius: 10px 0px 0px 10px;
+     background-color: #00a082;
+}
+#flagIcon{
+     padding-left: 20px;
+     padding-right:20px;
+     flex-shrink: 0;
+     min-width: 40%;
+     min-height: 40%
+}
+#formDiv{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     overflow: hidden  
+     
+}
+#formAddress input[type="text"] {
+     width: 50px;
+     padding: 5px 20px;
+     margin: 5px 0;  
+     border: none;
+     background-color: #3CBC8D;  
+    
+   }
+
+   #address{
+     max-width: 380px;
+     padding-left: 40px;
+     text-size-adjust: 25px;
+     font-size:24px;
+     size:10px;
+
+     border: none;
+     background-color: transparent;
+     resize: none;
+     outline: none;
+ }
+   .location{     
+        display: flex;
+        /* background-color: #fff; */
+        margin-top:10px;
+        margin-bottom:40px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+            
+   }
+   #currentLocationText a{
+     color: #3CBC8D;
+     font-size: 18px;    
+     font-weight: bold;
+     text-decoration: none;   
+   }
+
+   /* intro text + input fild text + използ тек местопожение END !!!!!!!!!!!! */
+
+   #bubbleMenuContainer{
+     display: flex;
+     /* background-color: bisque; */
+     background-color: #ffc244;
+     justify-content: center;
+     align-content: center;
+     height: 400px;
+     box-sizing: border-box;
+     height: fit-content;
+     padding-bottom: 30px;
+
+      
+   }
+   .bubbleMenu{
+     box-sizing: border-box;
+     display: flex;
+     width: 640px;
+     flex-direction: row;
+     flex-wrap: wrap;
+     /* background-color: grey; */
+     background-color: #ffc244;
+     justify-content: center;
+     justify-items: center;
+     gap:30px  18px;
+
+   }
+
+   .bubbleMenu div{
+        /* elementsInCircle */
+        display: flex;
+        border-radius: 50%;
+        max-height: 114.2px;
+        max-width: 114.2px;
+        min-height: 114.2px;
+        min-width: 114.2px;     
+        background-color: #fff;  
+        display: flex;
+        justify-content: center;
+        align-items: center;   
+        flex-direction: column;
+        gap:8px;    
+        cursor: pointer;
+   }
+   .bubbleMenu div:hover{
+        /* NICE TRIES :D  for animation
+        /* flex-grow: 3;
+        flex-grow: 0.6; */
+         /* transition-delay:0.5s;    */
+
+      transition: 0.3s;
+      transform:scale(1.050);   
+      color: rgba(255, 255, 255, 1);
+      box-shadow: 1px 1px 5px 0px #fff;
+      
+   }
+   .bubbleImg { 
+        display: flex;
+        width: 58px;
+        padding-top: 12px;
+   }
+   .bubbleText {
+        box-sizing: border-box;
+        text-decoration: none;
+        color: black;
+        font-family:sans-serif;
+        width: 80px;
+        word-wrap: break-word;   
+        text-align: center;    
+        padding-bottom: 26px;  
+   }
+
+
+   /* BUBBLE MENU  -> END */
+   /* wave bg */
+   #wave1{
+       box-sizing: border-box;    
+   }
+   #wave1 img{
+     width: 100%;
+   }
+
+
+   /* RESTAURANTS SECTION */
+   #resTitle{   
+      width: 100%;   
+      background-color:#fff;
+      text-align: center;
+   }
+   #resTitle h1 { 
+     border-color: black;  
+     position: center;
+     text-align: center;
+     font-family:'Segoe UI', Tahoma, Verdana, sans-serif, Geneva, Tahoma, sans-serif;
+     font-size: 26px;
+     /* span decoration "Храна" */
+     display: inline;  
+   }
+   #spanDecoration {
+     background-color: #ffc244;
+     border-radius: 30px;
+     padding-right: 10px; 
+     padding-left: 8px; 
+   }
+
+
+   #restourantsWrapper { 
+     margin-top: 0;
+     box-sizing: border-box;
+     display: flex;
+     background-color:#fff;
+     flex-direction: row;
+     flex-wrap: wrap;    
+     height: fit-content;
+     gap: 30px 30px;
+     justify-content: center;
+     align-content: center;
+     padding-bottom: 50px;  
+     /* fix for zoom view 25% !!!! */
+      /* max-width: 100%; */
+     max-width: 1120px;
+     margin-left: auto;
+     margin-right: auto;
+   }
+     .restaurants {
+          margin-top: 50px; 
+          display: flex;
+          width: 348px;
+          height: 250px;
+          flex-direction: column;
+          box-sizing: border-box;
+          border-radius: 10px 10px 0px 0px;         
+          background-color:black;  
+          /* !!!!! revativ-> напасва innerText + Bottom text */
+          position: relative;   
+          cursor: pointer;
+          box-sizing: border-box;
+          overflow: hidden;
+
+          /* box-shadow: 3px 5px whitesmoke; PRO BOX SHADOW */
+          box-shadow: 0px 2px 20px 0px rgb(0 0 0 / 10%);    
+     }
+
+     /* ZOOM efect on point restaurant box */
+     .restaurants:hover .resImgContainer,
+     .restaurant:focus .resImgContainer{
+          display: block;
+        transform: scale(1.1);
+        transition: transform 0.4s ease;
+       
+        /* overflow hidden - за да зумва без да вдига width */
+     }
+    
+     .resImgContainer {
+          position: relative;
+          display: flex;
+          box-sizing: border-box;
+          justify-content: center;
+          align-content: center;
+          height: 210px;   
+          
+          border-radius: 10px 10px 0px 0px;  
+          background-size: cover; 
+          background-position: center;         
+          mask-repeat: no-repeat;    
+          /* same like -> flex center */
+          /* width: 100%;
+          height: 100%;             */
+          text-align: center;          
+          opacity:0.8;           
+     }
+     .innerTextContainer{
+          /* position: absolute; */
+          position: absolute; 
+          margin-top:80px;
+      
+          left: 0; 
+          right: 0; 
+          margin-left: auto; 
+          margin-right: auto; 
+          text-align: center;
+          width: 320px; /* Need a specific value to work */    
+     }
+     .innerTextContainer p {            
+          font-weight: bold;
+          font-family: sans-serif;
+          font-size: 36px;
+          color:white;           
+        }
+
+    .underImgTextContainer {
+     box-sizing: border-box;
+     margin-top: 0px;
+     display: flex;
+     box-sizing: border-box; 
+     display: flex;   
+     align-items: flex-start;
+     justify-content: flex-start;
+     background-color: #fff;
+
+     /* position absolut -> да не минава зоома отгоре*/
+     position: absolute;
+     left: 0;
+     bottom: 0;
+     right: 0;
+
+     /* padding 5 -> крие bg-color:black */
+     padding-bottom: 5px;
+    }
+    .underImgTextContainer p {
+      padding-top: 10px;
+      font-size: 22px;
+      padding-left: 12px;
+      background-color: white;
+    }
+    .likeIcon {    
+         padding-left: 10px;
+         margin-top: 6px;
+         width: 36px;
+         height: 29px;       
+    }
+
+    /* END Restaurants SECTION */
+
+    /* <div id="moreResulMainContainer">
+    <div id="moreResultOval"> */
+    #moreResulMainContainer{
+         background-color: white;
+         margin-bottom: 20px;
+         display: flex;
+         justify-content: center;
+         justify-items: center;
+         box-sizing: border-box;
+    }
+    #moreResultOval{      
+         width: fit-content;
+         height:fit-content;
+         background-color:#e9f8f5;
+         border-radius:34px ;
+         padding: 10px 10px; 
+         cursor: pointer;      
+    }
+    #moreResultOval h2{
+     color: #00a082;
+     padding-left: 6px;
+     padding-right: 6px;
+     text-align: center;
+     font-size: 20px;
+     font-family: sans-serif;
+     font-weight: 700; 
+    }
+
+    /* wave 2, handsIcon, "да го направим заедно" */
+    /* HTML -> div:wave2 -> още пропъртита! */
+    #wave2 {
+         height: 150px;
+         overflow: hidden;
+         margin-bottom: 0px;
+         margin-top: 30px;
+         position: relative;
+    }
+    #wave2 svg {
+        position: relative;
+        height: 100%;
+        width: 100%; 
+        text-align: center;       
+    }
+    #wave2 svg path {
+       stroke: none;
+       fill:#e9f8f5;
+       position: absolute;
+           
+    }
+
+    #handShake {    
+         position: absolute;          
+         width: fit-content;
+         height: fit-content;
+
+         /* за да центриташ AbsoluteDiv иска точна позиция,
+         (пр(0пиксела) и псоле даваш Auto -> така отив в центъра */
+         top: 36px;
+         left: 0px;
+         right: 0px;
+         margin-left: auto; 
+         margin-right: auto; 
+         text-align: center;    
+    }
+    #handShake img{
+         width: 121px;
+         height: 82px;       
+    }
+    
+    #together {       
+         background-color:#e9f8f5; 
+         width: 100%;  
+         text-align: center;          
+    }
+    #together h1{
+         font-family: Verdana, Geneva, Tahoma, sans-serif;
+         font-size: 26px; 
+         background-color:#e9f8f5; 
+         color: black;       
+    }
+
+    /* Get wotk Section */
+    /* <div id="getWorkWrapper">
+               <div class="job"> */
+     #getWorkBody{
+          background-color:#e9f8f5 ;
+          width: 100%;   
+          display: flex;   
+          justify-content: center;
+     }
+
+     #getWorkWrapper {
+          /* background-color:#e9f8f5; */
+          background-color: #e9f8f5;
+          height: fit-content;
+          display: flex;
+          gap:10px 30px;
+          justify-content: center;
+
+          flex-wrap: wrap;
+          flex-direction: row;
+          padding-top: 60px;
+          /* fix for zoom view 25% */
+          max-width: 1220px;        
+     }
+     .job {
+          margin-bottom: 120px;
+          display: flex;
+          width: 372px;
+          height:498px;
+          background-color:#e9f8f5;
+          /* justify-content: center; */
+          align-content: center;
+          flex-direction: column;
+          box-sizing: border-box;
+          position: relative;
+     }
+    .jobImgContainer {
+          margin-left: auto;
+          margin-right: auto;      
+          width: fit-content;
+          height: fit-content;
+    }
+    .jobImgContainer img{
+         box-sizing: border-box;
+         margin-top: 20px;
+    }
+    .jobTitle {
+         margin-top: 20px; 
+    }
+    .jobTitle h3{
+         text-align: center;
+         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;          
+         font-size: 24px;
+         color: #000;
+    }
+    .jobText {
+         box-sizing: border-box;
+         margin-top: 15px;
+         margin-right: 40px;
+         margin-left: 40px;
+    }
+    .jobText p {
+        font-weight: 326; 
+        font-size: 18px;
+        font-style: italic;
+        text-align: justify; 
+    }
+    .jobJoinText {
+         box-sizing: border-box;
+         background-color: #00a082;
+         width: fit-content;
+         margin-left: auto;
+         margin-right: auto;
+         padding: 20px 64px;
+         border-radius:100px;
+
+         position: absolute;
+         bottom: 0;
+         left:0;
+         right:0;
+         margin-left: auto;
+         margin-right: auto;       
+    }
+    .jobJoinText:hover {
+     cursor: pointer;
+     filter: brightness(0.85);  
+
+    }
+    .jobJoinText h3 {
+         text-align: center;
+         color: white;
+         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+         font-size: 18px;
+     }
+
+     /* last wave before footer____________________________________________________________ */
+     #lastWaveContainer img{
+          width: 100%;   
+     }
+     #footerContainer{
+          margin-top: -3.7px;
+          width: 100%;
+          height: 500px;
+          background-color: #1d1d1d;
+          color: white;
+     }
+     #footerGlovoLogo{
+          margin-left: 64px;
+     }
+     #footer-text-container{
+          width: 90%;
+          margin:auto;
+          height: 400px;
+          display: flex;
+          flex-direction: row;   
+          justify-content: space-between;  
+          margin-top: 28px;   
+            
+     }
+      .footerDiv{
+           width: 200px;   
+           height: 276px;
+           text-decoration: none;
+           display: flex;
+           flex-direction: column;
+           margin-bottom: 16px;
+           text-align: left;
+      }    
+      .footerDiv h3{
+           font-size: 20px;
+           margin-bottom: 28px;
+           
+      } 
+      .footerDiv a{
+           text-decoration: none;
+           color:white;
+           margin-bottom: 16px;
+      }  
+      .logoGooglePlay{
+           margin-bottom: 28px;
+           width: 112px;
+           height: 35px;   
+                      
+      }
+     
+      /* last element footer - Language input_________________________________________ */
+     #languageChangeContainer{
+          width: 100%;
+          background-color: #1d1d1d;
+          padding-bottom: 30px;
+     }
+      #languageChange {
+          width: 220px;
+          background-color: wheat;
+          height: 22px;
+          margin-left: 64px;
+          text-align: left;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          padding:12px;
+          border-radius: 5px;   
+          cursor: pointer;   
+          background-color: #303030; 
+          border: 1px solid white;     
+     }  
+      #languageChange div img{
+          width: 14px;
+          height: 14px; 
+             
+      }
+    
+    
+ 
+
+
+    
+
+    
+
+  
+
+
+
+
+
+   
+ 
+
+
+
+
+
+
+    
+
+
+
+
+
