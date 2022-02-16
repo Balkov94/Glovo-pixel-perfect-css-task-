@@ -1,1 +1,1 @@
-# Glovo_CSS_practice
+# Glovo_CSS_practic

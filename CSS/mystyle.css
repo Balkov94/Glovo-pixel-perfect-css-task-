@@ -4,13 +4,16 @@
 }
 body{
      font-family: "Gotham","Arial","Helvetica Neue",Helvetica,sans-serif;
+     background-color: whitesmoke
+     width: 100%;
 }
 .bodyWrapper{      
           display: flex;
           flex-direction: column;
-          min-height: 100%;
           word-wrap: break-word;
           font-family: "Gotham","Arial","Helvetica Neue",Helvetica,sans-serif;     
+          min-height: 100%;
+          width: 100%;
 }
 /* header + header sticky */
 #header {
@@ -50,6 +53,18 @@ body{
      text-align: center; 
      margin-left: 48px;   
 }
+/* mobile fix */
+@media only screen and (max-width: 900px) {
+     #span_container{
+          position: absolute;
+          width: 100%;
+          font-size: 18px;
+          top:50%;
+          margin-left: auto;
+          margin-right: auto;
+     }
+   }
+
 #span_container h2{
      display: inline;
      font-size: 18px;
@@ -67,13 +82,14 @@ body{
 #startBHeader{
      border-radius: 20px;
      width:140px;
+     min-width: 140px;
      height: 42px;
      background-color: #00a082;  
      color: white;
      text-align: center;
 }
 /* phone  startB fix */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
      header{
           zoom: 0.7;
      }
@@ -155,6 +171,16 @@ body{
      opacity: 0.5;
      text-align: left;  
  }
+ /* mobile address field fix */
+ @media only screen and (max-width: 600px) {
+     #address::-webkit-input-placeholder {
+          font-size: 16px;
+          line-height:3;
+          opacity: 0.5;
+          text-align: left;  
+      }
+   }
+
 #address form {
      display: flex;    
 }
@@ -695,7 +721,17 @@ body{
           width: 14px;
           height: 14px; 
              
-      }
+ }
+ /* footer mobile  fix */
+ @media only screen and (max-width: 600px) {
+     #footerContainer{
+          height: fit-content;
+     }
+     #footer-text-container{
+          flex-direction: column;  
+          height: fit-content; 
+     }
+   }
     
     
  
